@@ -18,4 +18,3 @@ app.use('/', createProxyMiddleware({ target: 'http://localhost:3004/bundle.js', 
 
 app.listen(port, () => console.log(`listening on port ${port}`));
 
-module.exports = app;
