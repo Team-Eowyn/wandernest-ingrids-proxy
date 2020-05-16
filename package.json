@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server/index.js --watch"
+    "start": "nodemon ./server/index.js --watch",
+    "startAll": "(cd ../wandernest-about && npm run start) & (cd ../wandernest-bookings && npm run start) & (cd ../wandernest-photocarousel && npm run start:dev) & (cd ../wandernest-reviews && npm run server-dev) & npm run start",
+    "buildAll": "(cd ../wandernest-about && npm run build) & (cd ../wandernest-bookings && npm run build) & (cd ../wandernest-photocarousel && npm run build:dev) & (cd ../wandernest-reviews && npm run react-dev)"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,8 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.14",
+    "path": "^0.12.7"
   }
 }
