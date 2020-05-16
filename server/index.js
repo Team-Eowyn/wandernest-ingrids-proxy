@@ -11,7 +11,7 @@ app.use('/api/hotels/:id', createProxyMiddleware({ target: 'http://ec2-18-220-15
 
 app.use('/api/hotels/', createProxyMiddleware({ target: 'http://ec2-18-220-158-65.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }));
 
-app.use('/api/bookings/:id', createProxyMiddleware({ target: 'http://http://ec2-18-191-247-25.us-east-2.compute.amazonaws.com:3002', changeOrigin: true }));
+app.use('/api/bookings/:id', createProxyMiddleware({ target: 'http://ec2-18-191-247-25.us-east-2.compute.amazonaws.com:3002', changeOrigin: true }));
 
 app.use('/api/bookings/', createProxyMiddleware({ target: 'http://ec2-18-191-247-25.us-east-2.compute.amazonaws.com:3002', changeOrigin: true }));
 
