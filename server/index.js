@@ -7,7 +7,7 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../dist')));
 
-app.use('/api/hotels/:id', createProxyMiddleware({ target: 'http://http://ec2-18-220-158-65.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }));
+app.use('/api/hotels/:id', createProxyMiddleware({ target: 'http://ec2-18-220-158-65.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }));
 
 app.use('/api/hotels/', createProxyMiddleware({ target: 'http://ec2-18-220-158-65.us-east-2.compute.amazonaws.com:3001', changeOrigin: true }));
 
