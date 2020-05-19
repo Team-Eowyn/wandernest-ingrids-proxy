@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./server/index.js --watch",
-    "startAll": "(cd ../wandernest-about && npm run start) & (cd ../wandernest-bookings && npm run start) & (cd ../wandernest-photocarousel && npm run start:dev) & (cd ../wandernest-reviews && npm run server-dev) & npm run start",
-    "buildAll": "(cd ../wandernest-about && npm run build) & (cd ../wandernest-bookings && npm run build) & (cd ../wandernest-photocarousel && npm run build:dev) & (cd ../wandernest-reviews && npm run react-dev)"
+    "startAll": "(cd ../wandernest-header && npm run start) & (cd ../wandernest-about && npm run start) & (cd ../wandernest-bookings && npm run start) & (cd ../wandernest-photocarousel && npm run start:dev) & (cd ../wandernest-reviews && npm run server-dev) & npm run start",
+    "buildAll": "(cd ../wandernest-header && npm run build) & (cd ../wandernest-about && npm run build) & (cd ../wandernest-bookings && npm run build) & (cd ../wandernest-photocarousel && npm run build:dev) & (cd ../wandernest-reviews && npm run react-dev)"
   },
   "repository": {
     "type": "git",
