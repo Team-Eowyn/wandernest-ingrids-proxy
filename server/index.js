@@ -25,7 +25,7 @@ app.use('/roomtips', createProxyMiddleware({ target: 'http://ec2-54-153-71-183.u
 
 app.use('/', createProxyMiddleware({ target: 'http://ec2-54-153-71-183.us-west-1.compute.amazonaws.com:3004', changeOrigin: true }));
 
-app.use('/header/:id', createProxyMiddleware({ target: 'http://ec2-3-135-240-27.us-east-2.compute.amazonaws.com:3005/'}))
+app.use('/header/:id', createProxyMiddleware({ target: 'http://ec2-3-135-240-27.us-east-2.compute.amazonaws.com:3005'}))
 
 
 app.listen(port, () => console.log(`listening on port ${port}`));
